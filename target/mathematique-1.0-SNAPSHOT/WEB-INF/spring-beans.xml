@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:jaxws="http://cxf.apache.org/jaxws"
+        xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://cxf.apache.org/jaxws http://cxf.apache.org/schemas/jaxws.xsd">
+
+<bean id="factorielWS" class="belobog.webservice.FactorielWS">
+    <property name="factorielValidator" ref="factorielValidator"></property>
+    <property name="factorielService" ref="factorielService"></property>
+</bean>
+        
+<bean id="factorielService" class="belobog.service.FactorielService" />
+    	     
+<bean id="factorielValidator" class="belobog.validator.FactorielValidator" />
+
+</beans>
