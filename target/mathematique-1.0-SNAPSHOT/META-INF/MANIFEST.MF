@@ -1,4 +1,0 @@
-Manifest-Version: 1.0
-Built-By: azerty-mac
-Created-By: IntelliJ IDEA
-
